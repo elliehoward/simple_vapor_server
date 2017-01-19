@@ -3,7 +3,7 @@
 
 The purpose of this tutorial is learning to use Vapor with Swift. While you do NOT need to USE XCode for this particular tutorial, you do need to [begin downloading it](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) now in order to use Swift. After it has downloaded, open it to begin the installation. I recommend looking into it because it is a useful environment to experiment with swift in. To open it just hit ` Cmnd + Spacebar ` and type `xcode`
 
-Swift is a compiled language, meaning it takes time to see the changes in your code’s output because you have to compile before rendering. This is the reason I recommend experimenting with XCode is it helps programming in swift less of a hassle, because you can see changes live, before compiling and compiling can take a while.
+Swift is a compiled language, meaning it takes time to see the changes in your code’s output because you have to compile before rendering. This is the reason I recommend experimenting with XCode because it makes programming in swift less of a hassle, you can see changes live, before compiling and compiling can take a while.
 
 Because Swift’s syntax is so close to Javascript’s, I assert that Swift should be fairly easy for a web developer to pick up. In this guide I will compare each line of code in Swift with what it would look like in JS. 
 
@@ -35,9 +35,11 @@ Vapor requires Swift 3, and the latest version of Xcode (Right now that’s 8 be
 If you still have not [downloaded and installed XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12), do so now. As I said before, after downloading, open XCode to install it. (This may take awhile).
 
 When XCode has finished installing, open your terminal and type:
-``
+
+```
 curl -sL check.vapor.sh | bash
-``
+```
+
 (if you see the green checkmark you’re all good :D )
 
 
