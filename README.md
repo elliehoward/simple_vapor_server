@@ -28,7 +28,7 @@ Working with a new language has many benefits and building a server in Swift wil
 
 # Let's do this:
 
-Download & Install the latest version of XCode and Vapor
+### Download & Install the latest version of XCode and Vapor
 
 Vapor requires Swift 3, and the latest version of Xcode (Right now that’s 8 beta.)
 
@@ -40,7 +40,35 @@ When XCode has finished installing, open your terminal and type:
 curl -sL check.vapor.sh | bash
 ```
 
-(if you see the green checkmark you’re all good :D )
+If you see this then you’re ready to install Vapor :D 
+
+```
+✅ Compatible
+```
+
+Now download vapor by typing this into your terminal:
+
+```
+curl -sL toolbox.vapor.sh | bash
+```
+
+NOTE: This also may take a while, and it might say installation failed, trying sudo. If that happens, don't worry. As long as you see something like the message below it's fine.:
+
+```
+Vapor Toolbox v0.10.4 Installed
+```
+ Now to make sure it installed correctly type `vapor --help` into the terminal and you should see something like this appear:
+
+```
+Usage: vapor new <name> [--template]
+Creates a new Vapor application from a template.
+name: The application's executable name.
+template: The template repository to clone. 
+Default: https://github.com/vapor/basic-template.
+```
+
+
+
 
 
 
