@@ -86,19 +86,15 @@ cd Hello-World
 ```
 Now open the folder with your favorite text editor. I use Arom but feel free to use XCode or whatever you are comfortable using.
 
-As you can see when we ran vapor new it created a folder with the folloeing file structure:
-
-![file structure](https://cdn-images-1.medium.com/max/800/1*xMmpplDBmRAVumPgxvW-4A.jpeg)
-
-alternative view of file structure:
+As you can see when we ran vapor new it created a folder with the following file structure:
 
 ```
 ├── Package.swift
-├── App
-│   ├── main.swift
-│   ├── Controllers
-│   ├── Middleware
-│   └── Models
+├──Sources
+|   └──App
+│       ├── main.swift *
+│       ├── Controllers
+│       └── Models
 ├── Resources
 |    └── Views
 ├── Config
@@ -106,7 +102,7 @@ alternative view of file structure:
 └── Public
 ```
 
-We will be working in main.swift.
+* We will be working in main.swift.
 
 ### Creating your first route in Swift
 
@@ -143,7 +139,7 @@ Now save your changes and in your terminal type `vapor build` and then `vapor ru
 
 Next, go to your brower and navigate to localhost:8080 and you should be able to see your "Hello World!"
 
-Congratulations, you have started working with swift and vapor to create a simple server, next check out my tutorial on [creating a simple CRUD application server in swift.](github.com/elliehoward/simple_vapor_crud_server)
+Congratulations, onmaking your first route with swift and vapor! Next check out my tutorial on [creating a simple CRUD application server in swift.](github.com/elliehoward/simple_vapor_crud_server)
 
 
 
