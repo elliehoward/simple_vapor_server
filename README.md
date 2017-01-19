@@ -32,7 +32,7 @@ Working with a new language has many benefits and building a server in Swift wil
 
 Vapor requires Swift 3, and the latest version of Xcode (Right now that’s 8 beta.)
 
-If you still have not [downloaded and installed XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12), do so now. As I said before, after downloading, open XCode to install it. (This may take awhile).
+If you still have not [downloaded and installed XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12), do so now. As I said before, when it has finished downloading, open XCode to install it. (This may take a while).
 
 When XCode has finished installing, open your terminal and type:
 
@@ -52,7 +52,7 @@ Now download vapor by typing this into your terminal:
 curl -sL toolbox.vapor.sh | bash
 ```
 
-NOTE: This also may take a while, and it might say installation failed, trying sudo. If that happens, don't worry. As long as you see something like the message below it's fine.:
+NOTE: This also may take a while, and it might say installation failed, trying sudo. If that happens, don't worry. As long as you see something like the message below it's fine.
 
 ```
 Vapor Toolbox v0.10.4 Installed
@@ -67,9 +67,18 @@ template: The template repository to clone.
 Default: https://github.com/vapor/basic-template.
 ```
 
+### Create a new Vapor project
 
+Type the following into your terminal, with your project name in place of Hello-World:
+:
 
+```
+vapor new Hello-World
+```
 
+At this point you should see this:
+
+![Vapor welcome message](http://imgur.com/a/fX8hy)
 
 
 
