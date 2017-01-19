@@ -70,7 +70,6 @@ Default: https://github.com/vapor/basic-template.
 ### Create a new Vapor project
 
 Type the following into your terminal, with your project name in place of Hello-World:
-:
 
 ```
 vapor new Hello-World
@@ -80,9 +79,71 @@ At this point you should see this:
 
 ![Vapor welcome message](http://i65.tinypic.com/143f4n5.png)
 
+As the welcome message says, change directories into the newly created folder.
+
+```
+cd Hello-World
+```
+Now open the folder with your favorite text editor. I use Arom but feel free to use XCode or whatever you are comfortable using.
+
+As you can see when we ran vapor new it created a folder with the folloeing file structure:
+
+![file structure](https://cdn-images-1.medium.com/max/800/1*xMmpplDBmRAVumPgxvW-4A.jpeg)
+
+alternative view of file structure:
+
+```
+├── Package.swift
+├── App
+│   ├── main.swift
+│   ├── Controllers
+│   ├── Middleware
+│   └── Models
+├── Resources
+|    └── Views
+├── Config
+├── Localization
+└── Public
+```
+
+We will be working in main.swift.
+
+### Creating your first route in Swift
+
+Erase everything in the file.
+
+Now type the following into the main.swift file
+
+```
+import Vapor
+
+let drop = Droplet()
+```
+As stated in the [Vapor Docs](https://vapor.github.io/documentation/guide/droplet.html), 
+```
+"The Droplet is a service container that gives you access to many of Vapor's facilities. It is responsible for registering routes, starting the server, appending middleware, and more."
+```
+
+Now add a route handler for the index page. ("/")
+
+```
+drop.get("/") { req in
+    return "Hello World!"
+    }
+```
+
+Now  now add a call to the serve function in order to start the server by adding:
+
+```
+drop.run()
+```
+
+Now save your changes and in your terminal type `vapor build` and then `vapor run`. The vapor build may take a while to complete.
 
 
+Next, go to your brower and navigate to localhost:8080 and you should be able to see your "Hello World!"
 
+Congratulations, you have started working with swift and vapor to create a simple server, next check out my tutorial on [creating a simple CRUD application server in swift.](github.com/elliehoward/simple_vapor_crud_server)
 
 
 
