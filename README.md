@@ -102,7 +102,7 @@ As you can see when we ran vapor new it created a folder with the following file
 └── Public
 ```
 
-* We will be working in main.swift.
+\* We will be working in main.swift.
 
 ### Creating your first route in Swift
 
@@ -116,9 +116,8 @@ import Vapor
 let drop = Droplet()
 ```
 As stated in the [Vapor Docs](https://vapor.github.io/documentation/guide/droplet.html), 
-```
 "The Droplet is a service container that gives you access to many of Vapor's facilities. It is responsible for registering routes, starting the server, appending middleware, and more."
-```
+
 
 Now add a route handler for the index page. ("/")
 
