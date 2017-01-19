@@ -78,7 +78,7 @@ vapor new Hello-World
 
 At this point you should see this:
 
-![Vapor welcome message](http://imgur.com/a/fX8hy)
+![Vapor welcome message](http://i65.tinypic.com/143f4n5.png)
 
 
 
